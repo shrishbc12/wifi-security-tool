@@ -1,24 +1,98 @@
 
-# Wi-Fi Security Assessment Tool
+# Wi-Fi Security Tool
 
-A Python-based ethical hacking tool for scanning Wi-Fi networks and testing WPA/WPA2 password strength. Developed as part of the *Ethical Hacking and Cyber Security* module.
+A Python-based Wi-Fi Security  Tool developed as part of the Ethical Hacking and Cyber Security module.  
+This project demonstrates wireless network scanning and WPA/WPA2 password strength evaluation in a controlled and ethical environment.
+
+---
+
+## Project Objectives
+- Apply wireless security concepts in practical implementation  
+- Develop a GUI-based Wi-Fi Scanner  
+- Develop a GUI-based Password Cracker  
+- Understand vulnerabilities in weak wireless password configurations  
+
+---
 
 ## Features
-- **Wi-Fi Scanner** – Detects nearby access points and extracts:
-  - SSID (network name)
-  - BSSID (MAC address)
-  - Signal strength (dBm)
-  - Encryption type (WPA2, WEP, Open, etc.)
-- **Password Cracker** – Dictionary attack against WPA/WPA2 handshakes using `aircrack-ng`.
 
-## Requirements
-- Linux (tested on Kali Linux)
-- Python 3.6+
-- Wireless adapter supporting **monitor mode** and **packet injection**
-- Root privileges
+### Wi-Fi Scanner Module
+- Passive IEEE 802.11 beacon frame detection  
+- Displays: 
+  - SSID  
+  - BSSID  
+  - Signal Strength (dBm)  
+  - Encryption Type  
+- Detects hidden networks  
+- GUI built with Tkinter  
+- Validates root privileges  
+
+### WPA/WPA2 Password Cracker Module
+- Analyzes WPA handshake capture files (.cap)  
+- Extracts BSSID automatically  
+- Performs dictionary-based attack  
+- Real-time cracking output display  
+- Handles errors:  
+  - No handshake found  
+  - Password not in dictionary  
+  - Insufficient privileges
+- GUI built in Tkinter
+
+---
+
+## Technologies Used
+- Python 3  
+- Scapy  
+- Tkinter  
+- Aircrack-ng  
+- Linux (Kali Linux recommended)  
+
+---
+
+## Project Structure
+```
+wifi-security-tool/
+│
+├── scanner.py              # GUI Wi-Fi Scanner module (Beacon frame capture using Scapy)
+├── password_cracker.py     # GUI WPA/WPA2 dictionary-based password tester (uses Aircrack-ng)
+├── requirements.txt        # Python dependencies required to run the project
+├── README.md               # Project documentation and usage instructions
+│
+├── wordlists/              # Folder containing sample dictionary files
+│   └── sample_wordlist.txt # Small demo wordlist for testing password strength
+│
+└── screenshots/            # Application output screenshots
+    ├── scanner_output # Screenshot of Wi-Fi Scanner detecting networks
+    └── cracker_success # Screenshot showing successful password cracking
+```
 
 ## Installation
 1. Clone the repository:
-   ```bash
+   ```
    git clone https://github.com/yourusername/wifi-security-tool.git
-   cd wifi-security-tool
+   cd wifi-security-tool```
+2. Install System Dependencies (Linux)
+   ```
+   sudo apt update
+   sudo apt install aircrack-ng python3 python3-pip python3-venv```
+4. Create Virtual Environment
+   ```
+   python3 -m venv wifi_venv
+   source wifi_venv/bin/activate```
+6. Install Python Dependencies
+   ```
+   pip install -r requirements.txt```
+## Running the Applications
+### Wi-Fi Scanner
+```
+sudo python3 wifi_scanner.py
+```
+### WPA/WPA2 Password Cracker
+```
+sudo python3 password_cracker.py
+```
+## Application Screenshots
+### Wi-Fi Scanner
+![Wifi Scanner](Screenshots/scanner_output.png)
+### WPA/WPA2 Password Cracker
+![Password Cracker](Screenshots/cracker_success.png)
