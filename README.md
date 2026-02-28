@@ -53,7 +53,7 @@ This project is a Python-based Wi-Fi Security Tool featuring a GUI Wi-Fi Scanner
 wifi-security-tool/
 │
 ├── scanner.py              # GUI Wi-Fi Scanner module (Beacon frame capture using Scapy)
-├── password_cracker.py     # GUI WPA/WPA2 dictionary-based password tester (uses Aircrack-ng)
+├── password_cracker.py     # GUI WPA/WPA2 dictionary-based password cracker (uses Aircrack-ng)
 ├── requirements.txt        # Python dependencies required to run the project
 ├── README.md               # Project documentation and usage instructions
 │
