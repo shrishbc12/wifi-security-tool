@@ -1,8 +1,7 @@
 
 # Wi-Fi Security Tool
 
-A Python-based Wi-Fi Security  Tool developed as part of the Ethical Hacking and Cyber Security module.  
-This project demonstrates wireless network scanning and WPA/WPA2 password strength evaluation in a controlled and ethical environment.
+This project is a Python-based Wi-Fi Security Tool featuring a GUI Wi-Fi Scanner and a WPA/WPA2 Password Cracker. The scanner detects nearby networks, showing SSID, BSSID, signal strength, and encryption type, while the password cracker tests WPA/WPA2 passwords using a wordlists.
 
 ---
 
