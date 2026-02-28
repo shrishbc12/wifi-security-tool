@@ -64,6 +64,7 @@ wifi-security-tool/
     ├── scanner_output # Screenshot of Wi-Fi Scanner detecting networks
     └── cracker_success # Screenshot showing successful password cracking
 ```
+
 ---
 
 ## Installation
