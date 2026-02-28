@@ -71,18 +71,22 @@ wifi-security-tool/
 1. Clone the repository:
    ```
    git clone https://github.com/yourusername/wifi-security-tool.git
-   cd wifi-security-tool```
+   cd wifi-security-tool
+   ```
 2. Install System Dependencies (Linux)
    ```
    sudo apt update
-   sudo apt install aircrack-ng python3 python3-pip python3-venv```
+   sudo apt install aircrack-ng python3 python3-pip python3-venv
+   ```
 4. Create Virtual Environment
    ```
    python3 -m venv wifi_venv
-   source wifi_venv/bin/activate```
+   source wifi_venv/bin/activate
+   ```
 6. Install Python Dependencies
    ```
-   pip install -r requirements.txt```
+   pip install -r requirements.txt
+   ```
    
 ---
 
