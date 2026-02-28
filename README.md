@@ -92,7 +92,26 @@ sudo python3 wifi_scanner.py
 sudo python3 password_cracker.py
 ```
 ## Application Screenshots
-### Wi-Fi Scanner
+### Wi-Fi Scanner Ouput
 ![Wifi Scanner](Screenshots/scanner_output.png)
-### WPA/WPA2 Password Cracker
+
+### WPA/WPA2 Password Cracker Ouput
 ![Password Cracker](Screenshots/cracker_success.png)
+
+## How It Works
+### Wi-Fi Scanner
+- Uses Scapy to capture 802.11 beacon frames
+- Extracts network metadata (SSID, BSSID, signal strength, encryption)
+- Updates GUI table dynamically
+- Prevents duplicate BSSID entries
+
+### Password Cracker
+- Uses Aircrack-ng for handshake analysis
+- Validates presence of WPA handshake
+- Performs dictionary-based attack
+- Displays cracking progress in real time
+  
+## References
+- Aircrack-ng Project
+- Scapy Developers
+- Python Software Foundation
