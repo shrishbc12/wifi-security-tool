@@ -65,6 +65,7 @@ wifi-security-tool/
     ├── scanner_output # Screenshot of Wi-Fi Scanner detecting networks
     └── cracker_success # Screenshot showing successful password cracking
 ```
+---
 
 ## Installation
 1. Clone the repository:
@@ -82,6 +83,9 @@ wifi-security-tool/
 6. Install Python Dependencies
    ```
    pip install -r requirements.txt```
+   
+---
+
 ## Running the Applications
 ### Wi-Fi Scanner
 ```
@@ -91,12 +95,17 @@ sudo python3 wifi_scanner.py
 ```
 sudo python3 password_cracker.py
 ```
+
+---
+
 ## Application Screenshots
 ### Wi-Fi Scanner Ouput
 ![Wifi Scanner](Screenshots/scanner_output.png)
 
 ### WPA/WPA2 Password Cracker Ouput
 ![Password Cracker](Screenshots/cracker_success.png)
+
+---
 
 ## How It Works
 ### Wi-Fi Scanner
@@ -110,7 +119,9 @@ sudo python3 password_cracker.py
 - Validates presence of WPA handshake
 - Performs dictionary-based attack
 - Displays cracking progress in real time
-  
+
+---
+
 ## References
 - Aircrack-ng Project
 - Scapy Developers
