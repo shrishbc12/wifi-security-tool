@@ -7,8 +7,8 @@ This project is a Python-based Wi-Fi Security Tool featuring a GUI Wi-Fi Scanner
 
 ## Project Objectives
 - Apply wireless security concepts in practical implementation  
-- Develop a GUI-based Wi-Fi Scanner  
-- Develop a GUI-based Password Cracker  
+- Study and Develop a GUI-based Wi-Fi Scanner  
+- Study and Develop a GUI-based Password Cracker  
 - Understand vulnerabilities in weak wireless password configurations  
 
 ---
