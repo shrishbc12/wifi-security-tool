@@ -31,10 +31,6 @@ This project is a Python-based Wi-Fi Security Tool featuring a GUI Wi-Fi Scanner
 - Extracts BSSID automatically  
 - Performs dictionary-based attack  
 - Real-time cracking output display  
-- Handles errors:  
-  - No handshake found  
-  - Password not in dictionary  
-  - Insufficient privileges
 - GUI built in Tkinter
 
 ---
